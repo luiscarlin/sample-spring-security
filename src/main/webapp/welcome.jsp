@@ -20,7 +20,6 @@
             <a onclick="document.forms['logoutForm'].submit()">Logout</a>
         </h2>
     </c:if>
-
 </div>
 </body>
 </html>
