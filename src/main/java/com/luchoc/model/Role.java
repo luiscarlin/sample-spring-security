@@ -28,6 +28,12 @@ public class Role {
         this.name = name;
     }
 
+    /**
+     *
+     * @ManytoMany  One role can be associated with many users and one user can be associated with many roles
+     * mappedBy     In User class, roles are identified by "roles" instance variable
+     *              This is the child entity in the relationship because it has "mappedBy"
+     */
     @ManyToMany(mappedBy = "roles")
     public Set<User> getUsers() {
         return users;

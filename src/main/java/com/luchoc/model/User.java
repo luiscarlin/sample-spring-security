@@ -46,6 +46,9 @@ public class User {
         this.password = password;
     }
 
+    /**
+     * @Transient   passwordConfirm will not be persisted nor serialized
+     */
     @Transient
     public String getPasswordConfirm() {
         return passwordConfirm;
@@ -55,8 +58,17 @@ public class User {
         this.passwordConfirm = passwordConfirm;
     }
 
+    /**
+     * @ManyToMany  One user can be associated with many roles AND one role can be associated to many users
+     * @JoinTable   Create a mapping table for the relationship with 2 columns
+     *              This class becomes the owner of the relationship
+     * "roles"      Instance var name (Set<Role> roles) to match from the Role entity
+     */
     @ManyToMany
-    @JoinTable(name = "user_role", joinColumns = @JoinColumn(name = "user_id"), inverseJoinColumns = @JoinColumn(name = "role_id"))
+    @JoinTable(name = "user_role",
+            joinColumns = @JoinColumn(name = "user_id"),
+            inverseJoinColumns = @JoinColumn(name = "role_id")
+    )
     public Set<Role> getRoles() {
         return roles;
     }
