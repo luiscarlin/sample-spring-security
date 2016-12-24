@@ -33,7 +33,10 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
                     .permitAll()
                     .and()
                 .logout()
-                    .permitAll();
+                    .deleteCookies("remember-me")
+                    .permitAll()
+                    .and()
+                .rememberMe();
     }
 
     @Autowired

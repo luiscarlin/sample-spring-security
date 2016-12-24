@@ -16,6 +16,8 @@
             <span>${message}</span><br>
             <input name="username" type="text" placeholder="Username" autofocus="true"/><br>
             <input name="password" type="password" placeholder="Password"/><br>
+            <label for="remember-me">Remember me</label>
+            <input type="checkbox" name="remember-me" id="remember-me"/><br>
             <span>${error}</span><br>
             <input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}"/>
 
