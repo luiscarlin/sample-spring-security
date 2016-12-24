@@ -7,7 +7,7 @@ Login and registration pages
 - Validation for input fields with error messages
 - Auto-login on successful registration
 - CSRF token
-- [Coming soon] Remember me checkbox
+- Remember me checkbox
 - [Coming soon] Better exception handling
 
 ## Prerequisites
