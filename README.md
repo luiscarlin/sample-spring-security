@@ -8,7 +8,6 @@ Login and registration pages
 - Auto-login on successful registration
 - CSRF token
 - Remember me checkbox
-- [Coming soon] Better exception handling
 
 ## Prerequisites
 - JDK 1.8 or later
