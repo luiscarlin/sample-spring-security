@@ -3,9 +3,9 @@
 
 <c:set var="contextPath" value="${pageContext.request.contextPath}"/>
 
-<!DOCTYPE html>
+<!doctype html>
 <head>
-    <title>Create an account</title>
+    <title>Welcome</title>
 </head>
 
 <body>

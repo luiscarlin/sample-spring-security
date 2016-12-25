@@ -2,7 +2,7 @@
 
 <c:set var="contextPath" value="${pageContext.request.contextPath}"/>
 
-<!DOCTYPE html>
+<!doctype html>
 <head>
     <title>Log in with your account</title>
 </head>
