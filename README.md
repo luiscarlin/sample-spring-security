@@ -1,6 +1,7 @@
 # Sample Spring Security
 
-Login and registration pages
+Login and registration pages. 
+Push to Master and see it running in [heroku](https://lc-sample-spring-security.herokuapp.com).
 
 
 ## Features
