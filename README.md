@@ -35,3 +35,5 @@ and override the `public UserDetails loadUserByUsername(String)` method which re
 - By accessing the `SecurityContextHolder` you can obtain details about the currently authenticated user, and even authenticate somebody
 - You can validate forms by implementing the `Validator` interface and overriding `public boolean supports (Class<?>)` and `public void validate(Object, Errors)`
 - Spring takes care of `POST /login` by accessing your implementation of `UserDetailService`. You still need to define the `GET /login`
+- By default Spring will do basic security if it's in the classpath `org.springframework.boot:spring-boot-starter-security`. You can customize it though.
+
