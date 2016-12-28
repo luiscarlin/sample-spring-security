@@ -8,6 +8,8 @@ Log in and registration pages. Push to Master and see it running in [heroku](htt
 - Auto-login on successful registration
 - CSRF token
 - Remember me checkbox
+- [TODO] Role selection at registration
+- [TODO] Show content based on Role
 
 ## Prerequisites
 - JDK 1.8 or later
@@ -36,4 +38,3 @@ and override the `public UserDetails loadUserByUsername(String)` method which re
 - You can validate forms by implementing the `Validator` interface and overriding `public boolean supports (Class<?>)` and `public void validate(Object, Errors)`
 - Spring takes care of `POST /login` by accessing your implementation of `UserDetailService`. You still need to define the `GET /login`
 - By default Spring will do basic security if it's in the classpath `org.springframework.boot:spring-boot-starter-security`. You can customize it though.
-
