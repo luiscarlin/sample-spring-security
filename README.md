@@ -10,6 +10,7 @@ Log in and registration pages. Push to Master and see it running in [heroku](htt
 - Remember me checkbox
 - [TODO] Role selection at registration
 - [TODO] Show content based on Role
+- [TODO] Remember me functionality is missing persistence of session
 
 ## Prerequisites
 - JDK 1.8 or later
